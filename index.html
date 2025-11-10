@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogurt Delicioso - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">🥛 Yogurt Delicioso</div>
+                <div class="cart-icon" id="cartIcon">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Yogurt Natural y Delicioso</h1>
+                <p>Los mejores yogures artesanales de Colombia</p>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <div class="product-grid" id="productGrid">
+                    <!-- Los productos se cargarán con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-content">
+                <span class="close-btn" id="closeCart">&times;</span>
+                <h2>Tu Carrito</h2>
+                <div id="cartItems"></div>
+                <div class="cart-total">
+                    <h3>Total: <span id="totalPrice">$0</span></h3>
+                    <button class="btn-checkout" id="checkoutBtn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yogurt Delicioso. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
